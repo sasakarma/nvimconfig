@@ -13,6 +13,11 @@ return {
     end,
   },
 
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = require "configs.nvimtreeconfig",
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
