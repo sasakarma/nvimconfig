@@ -41,6 +41,8 @@ return {
 
   {
     "yetone/avante.nvim",
+    build = "make",
+    version = false,
     event = "VeryLazy",
     opts = require "configs.avante",
     dependencies = {
