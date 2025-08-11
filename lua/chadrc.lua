@@ -5,9 +5,16 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.base46 = {
-	theme = "monekai",
+M.ui  = {
+  statusline = {
+    theme = "default",
+    separator_style = "arrow",
+--    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
+  }
+}
 
+M.base46 = {
+	theme = "everforest",
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },

@@ -1,0 +1,7 @@
+return {
+  marks = {
+    Cursor = {
+      text = "■",
+    },
+  },
+}

@@ -18,6 +18,38 @@ return {
     opts = require "configs.nvimtreeconfig",
   },
 
+  {
+    "petertriho/nvim-scrollbar",
+    lazy=false,
+    config = function()
+      require('scrollbar').setup(require "configs.scrollbar")
+    end,
+  },
+
+  {
+    "lewis6991/gitsigns.nvim",
+    config = require "configs.gitsigns",
+  },
+
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    opts = {
+      file_types = { "markdown", "Avante" },
+    },  
+    ft = { "markdown", "Avante" }
+  },
+
+  {
+    "yetone/avante.nvim",
+    event = "VeryLazy",
+    opts = require "configs.avante",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      "MeanderingProgrammer/render-markdown.nvim",
+    },
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
